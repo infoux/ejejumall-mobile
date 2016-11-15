@@ -57,11 +57,33 @@ $(document).ready(function() {
         auto:true,
     });
 
+    var view = $('.view-top .slide').bxSlider({
+        controls:false,
+        infiniteLoop:true,
+        auto:true
+    });
+
+
     $('a button').hover(function() {
         $(this).parent().parent().bind('click', false);
     }, function(){
         $(this).parent().parent().unbind('click', false);
     });
+
+    $('.view-top .btn.back').click(function(){
+        history.go(-1);
+    });
+    $('.view-top select').change(function(){
+        $(this).parent().find('label').html($(this).find('option:selected').val());
+    });
+
+    $('.view-top button.toggle').click(function(){
+        console.log('asdf');
+        $('div.option').toggleClass('active');
+        $(this).find('i').toggleClass('fa-angle-up');
+        $(this).find('i').toggleClass('fa-angle-down');
+    });
+
 
 
 });
