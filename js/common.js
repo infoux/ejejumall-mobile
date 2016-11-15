@@ -57,7 +57,7 @@ $(document).ready(function() {
         auto:true,
     });
 
-    $('.main-recommend button').hover(function() {
+    $('a button').hover(function() {
         $(this).parent().parent().bind('click', false);
     }, function(){
         $(this).parent().parent().unbind('click', false);
