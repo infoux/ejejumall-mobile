@@ -63,7 +63,7 @@ body {
     user-select: none;
     background-image: none;
     border: 1px solid transparent;
-    border-radius: 0.250rem;
+    border-radius:0;
 }
 
 /*button Size*/
@@ -116,11 +116,11 @@ body {
 /*layout*/
 header#header {
     position:relative;
+    z-index:500;
     width:100%;
     margin:0;
     background:#f15e0e;
     height:3.875rem;
-    overflow:hidden;
     text-align:center;
 }
 
@@ -169,7 +169,7 @@ header#header fieldset.search {
     display:none;
     z-index:100;
     left:0;
-    bottom:0;
+    top:3.875rem;
     padding:0 1.25rem;
     margin:0;
     width:100%;
@@ -225,24 +225,20 @@ header#header fieldset.search button i {
 
 
 aside#all-menu {
-    position:fixed;
+    position:absolute;
     display:none;
-
     z-index:900;
     left:0;
-    right:0;
     top:0;
-    bottom:0;
+    right:0;
     background:rgba(0,0,0,0.6);
 }
 
 
 aside#all-menu nav {
     display:inline-block;
-    width:80%;
-    height:100%;
+    width:100%;
     background:#fff;
-    overflow-y:scroll;
 }
 
 aside#all-menu h1 {
@@ -274,11 +270,13 @@ aside#all-menu nav h2 a {
     color:#333;
     font-size:1.2rem;
     padding:0.75rem 0;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #ccc;
     font-weight:400;
 }
 
 aside#all-menu nav ul {
+    display:inline-block;
+    width:100%;
     padding:0;
     margin:0;
     list-style:none;
@@ -316,7 +314,7 @@ aside#all-menu nav .sub li:nth-child(even) a {
 
 aside#all-menu .close {
     position:absolute;
-    left:80%;
+    right:0;
     top:0;
     border-radius:0;
     font-size:0;
@@ -328,6 +326,7 @@ aside#all-menu .close i {
     padding:0.75rem;
     color:#333;
 }
+
 
 #main-menu {
     display:inline-block;
@@ -422,7 +421,7 @@ section.main-issue .bx-pager .bx-pager-item a.active {
 
 section.typeCenter {
     text-align:center;
-    padding:0 0.625rem;
+    padding:0 8px;
 }
 
 section.typeCenter h2 {
@@ -441,12 +440,15 @@ section.main-hot li {
     display:inline-block;
     position:relative;
     font-size:1rem;
-    padding:0.625rem;
-    border:1px solid #eee;
 }
 
 section.main-hot li a {
+    display:block;
+    width:100%;
     text-decoration:none;
+    padding:0.625rem;
+
+    border:1px solid #ccc;
 }
 
 section.main-hot li p {
@@ -507,7 +509,7 @@ section.main-recommend ul {
 
 section.main-recommend li {
     position:relative;
-    border:2px solid #eee;
+    border:1px solid #ccc;
     margin-bottom:1.875rem;
     padding-bottom:0.375rem;
 }
@@ -682,7 +684,7 @@ h2.stitle {
     line-height:50px;
     font-size:20px;
     font-weight:400;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #ccc;
     text-align:center;
 }
 
@@ -769,7 +771,7 @@ section.sub-list ul {
 
 section.sub-list li {
     position:relative;
-    border:2px solid #eee;
+    border:2px solid #ccc;
     margin-bottom:1.875rem;
     padding-bottom:0.375rem;
 
@@ -890,7 +892,7 @@ section.view-top .bx-pager .bx-pager-item a.active {
 section.view-top h2 {
     font-size:1.750rem;
     font-weight:400;
-    padding:0 0.625rem;
+    padding:0 1.250rem;
 }
 
 section.view-top h2 small button {
@@ -916,7 +918,7 @@ section.view-top .btn-set {
     z-index:300;
     bottom:0;
     left:0;
-    border-top:1px solid #eee;
+    border-top:1px solid #ccc;
     font-size:0;
     padding:0.625rem;
     width:100%;
@@ -952,7 +954,7 @@ section.view-top .option {
     z-index:300;
     bottom:3.750rem;
     left:0;
-    border-top:1px solid #eee;
+    border-top:1px solid #333;
     padding:0 0.625rem;
     width:100%;
     background:#ccc;
@@ -965,7 +967,8 @@ section.view-top .option button.toggle {
     top:-1.813rem;
     width:4.375rem;
     height:1.875rem;
-    border:none;
+    border:1px solid #333;
+    border-bottom:none;
     background:#ccc;
     font-size:0;
     border-radius:0.313rem 0.313rem 0 0;
@@ -976,7 +979,7 @@ section.view-top .option button.toggle i {
 }
 
 section.view-top .option.active {
-    height:11.875rem;
+    height:auto;
 }
 
 section.view-top .option ul {
@@ -1040,7 +1043,7 @@ section.view-top .count label {
 }
 
 section.view-top .count button {
-    background:#eee;
+    background:#ccc;
     font-size:0;
     color:#333;
     width:1.875rem;
@@ -1060,9 +1063,9 @@ section.view-top .count input {
     font-size:1rem;
     vertical-align:top;
     border-radius:0;
-    border-color:#eee;
+    border-color:#ccc;
     text-align:center;
-    border:1px solid #eee;
+    border:1px solid #ccc;
     -webkit-appearance: none;
 }
 
@@ -1080,11 +1083,26 @@ section.view-top .count p strong {
 }
 
 
+section.view-top .price {
+    background:#f4f4f4;
+    text-align:center;
+    padding:1.250rem 0;
+    margin:0 1.250rem;
+    font-size:1rem;
+}
 
+section.view-top .price del {
+    color:#999;
+}
+
+section.view-top .price strong {
+    font-size:1.750rem;
+    color:#dd2a2a;
+}
 
 
 section.view-top dl {
-    padding:10px 20px;
+    padding:0.625rem 1.250rem;
 
 }
 
@@ -1094,34 +1112,198 @@ section.view-top dt {
 }
 
 section.view-top dd {
-    padding-left:60px;
-    padding-bottom:8px;
+    padding-left:3.750rem;
+    padding-bottom:0.500rem;
 }
 
 section.view-top dd i {
     font-style:normal;
 }
 
+.view-tabs {
+    display:inline-block;
+    width:100%;
+    font-size:0;
+    padding:0;
+    list-style:none;
+}
+
+.view-tabs.fixed {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:800;
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+}
+
+
+.view-tabs li {
+    display:inline-block;
+    width:calc(100% / 4);
+}
+
+.view-tabs li a {
+    display:block;
+    font-size:1.125rem;
+    width:100%;
+    height:3.250rem;
+    line-height:3.250rem;
+    text-align:center;
+    border:1px solid #ccc;
+    border-left:none;
+    color:#333;
+    text-decoration:none;
+}
+
+.view-tabs li:last-child {
+    border-right:none;
+}
+
+.view-tabs li a.active {
+    border-bottom:2px solid #f15e0e;
+    font-weight:600;
+}
+
+section.tab-data {
+    display:none;
+    padding:1.250rem 0.625rem;
+}
+
+section.tab-data.fixed {
+    padding:4.500rem 0.625rem 1.250rem;
+}
+
+section.tab-data img {
+    max-width:100%;
+}
+
+section.tab-data.active {
+    display:block;
+}
+
+section.tab-data h2 {
+    font-weight:400;
+    font-size:1.250rem;
+    text-align:center;
+}
+
+section.tab-data#delivery ul {
+    padding:0;
+    margin:none;
+    list-style:none;
+}
+
+section.tab-data#delivery li {
+    margin-bottom:1.250rem;
+}
+
+section.tab-data#delivery i {
+    display:block;
+    width:6.250rem;
+    height:6.250rem;
+    line-height:6.250rem;
+    margin:0 auto;
+    background:#887042;
+    color:#fff;
+    border-radius:50%;
+    text-align:center;
+    font-size:2.000rem;
+}
 
 
 
+section.tab-data ul.list {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+section.tab-data ul.list li {
+    position:relative;
+    border:1px solid #ccc;
+    margin-bottom:20px;
+    padding:20px;
+}
+
+section.tab-data h3 {
+    display:inline-block;
+    margin:0;
+    font-weight:600;
+    font-size:18px;
+}
+
+section.tab-data ul.list li>div {
+    display:inline-block;
+    font-size:0;
+    padding-left:10px;
+    vertical-align:top;
+    padding-top:3px;
+}
+
+section.tab-data ul.list i {
+    font-size:1rem;
+    color:#ccc;
+    margin-right:2px;
+}
+
+section.tab-data ul.list i.on,
+section.tab-data .stars i.on {color:#fd9713;}
+
+section.tab-data#comment .date {
+    position:absolute;
+    right:20px;
+    top:20px;
+    margin:0;
+    font-size:14px;
+    color:#999;
+}
+
+section.tab-data .text {
+    line-height:1.6;
+    margin-bottom:0;
+}
+
+section.tab-data .btn-area {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+section.tab-data .reply-write {
+    display:inline-block;
+    padding:20px;
+    border:3px solid #eee;
+    margin-bottom:30px;
+}
+
+section.tab-data .reply-write .stars h3 {
+    display:block;
+    margin-bottom:1px;
+    text-align:center;
+}
+
+section.tab-data .reply-write .stars p {
+    text-align:center;
+}
+
+section.tab-data .reply-write .stars button {
+    display:inline-block;
+    padding:0;
+    border:none;
+    color:#ccc;
+    background:none;
+    font-size:24px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+section.tab-data .reply-write textarea {
+    width:100%;
+    height:80px;
+    font-size:14px;
+    padding:10px;
+}
 
 
 
@@ -1220,11 +1402,11 @@ footer#footer address {
     font-style:normal;
     font-size:0.688rem;
     letter-spacing:-1px;
-    color:#eee;
+    color:#ccc;
 }
 
 footer#footer address a {
-    color:#eee;
+    color:#ccc;
 }
 
 footer#footer address p {

@@ -149,11 +149,10 @@
                 </ul>
             </div>
             <h2>청정제주 고등어 세트 <small><button class="btn back"><i class="fa fa-angle-left" aria-hidden="true"></i>뒤로가기</button></small></h2>
+            <p class="price">
+                <del>14,500원</del> → 회원가격 <strong>14,000원</strong>
+            </p>
             <dl>
-                <dt>상품가격</dt>
-                <dd><str>14,500원</dd>
-                <dt>회원가격</dt>
-                <dd><strong>14,000원</strong></dd>
                 <dt>적립금</dt>
                 <dd><i>P</i>140원</dd>
                 <dt>배송비</dt>
@@ -189,8 +188,6 @@
                         <input id="count" type="text" value="1">
                         <button class="btn minus"><i class="fa fa-minus" aria-hidden="true"></i>빼기</button>
                         <p>합계 <strong>24,000원</strong></p>
-
-
                     </li>
                 </ul>
             </div>
@@ -201,17 +198,161 @@
             </div>
         </section>
         <ul class="view-tabs">
-            <li><a class="active" href="#product-info">상품상세정보</a></li>
-            <li><a href="#delivery">배송/반품/환불</a></li>
+            <li><a class="active" href="#product-info">상품정보</a></li>
+            <li><a href="#delivery">배송/반품</a></li>
             <li><a href="#comment">상품평</a></li>
             <li><a href="#qna">상품Q&amp;A</a></li>
         </ul>
         <section id="product-info" class="tab-data">
+            <img src="http://www.gifpng.com/1000x1000" alt="상품정보">
+        </section>
+        <section id="delivery" class="tab-data">
+            <h2>배송/반품/환불 안내</h2>
+            <ul>
+                <li>
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <p>구입하신 상품이 배송지로 운반도중 상품이 손상된 경우, 주문한 상품과 다른 상품이 배달된 경우,</p>
+                    <p>약속한 상품이 인도시기보다 늦게배달된 경우 및 하자가 있는 경우(훼손,불량,변질,표기사항 미기재 등) 에는</p>
+                    <p><strong>교환이나 반품을 요청하시면 상품을 받으신 후 7일 이내에 즉각 반품 및 환불 처리</strong>해 드리겠습니다.</p>
+                </li>
+                <li>
+                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                    <p>단, 고객의 책임있는 사유에 의한 반품(고객의 변심 등)일 경우에는 고객이 반품에 소요되는 운송비를 부담하여야 합니다.</p>
+                    <p>이외의 운송비는 판매자가 부담합니다.</p>
+                </li>
+                <li>
+                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                    <p>교환/반품/환불문의는</p>
+                    <p><strong>이제주몰 고객센터(064 - 751 - 3320)</strong>로 문의해 주시기 바랍니다.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="comment" class="tab-data active">
+            <h2>상품평</h2>
+            <div class="reply-write">
+                <div class="stars">
+                    <h3>상품평 쓰기</h3>
+                    <p>
+                        <button data="1"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        <button data="2"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        <button data="3"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        <button data="4"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        <button data="5"><i class="fa fa-star" aria-hidden="true"></i></button>
+                    </p>
+                </div>
+                <textarea></textarea>
+                <button class="btn btnF sub">글쓰기완료</button>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <h3>최밍구</h3>
+                    <div>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="date">2016-11-21</p>
+                    <p class="text">
+                        적극추천합니다. 너무 좋네요
+                    </p>
+                </li>
+                <li>
+                    <h3>최밍구</h3>
+                    <div>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="date">2016-11-21</p>
+                    <p class="text">
+                        적극추천합니다. 너무 좋네요
+                    </p>
+                </li>
+                <li>
+                    <h3>최밍구</h3>
+                    <div>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="date">2016-11-21</p>
+                    <p class="text">
+                        적극추천합니다. 너무 좋네요
+                    </p>
+                </li>
+            </ul>
 
         </section>
+        <section id="qna" class="tab-data">
+            <h2>질문과 답변</h2>
+            <div class="reply-write">
+                <div class="stars">
+                    <h3>질문하기</h3>
+                    <p>
+                        <button data="1"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        <button data="2"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        <button data="3"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        <button data="4"><i class="fa fa-star" aria-hidden="true"></i></button>
+                        <button data="5"><i class="fa fa-star" aria-hidden="true"></i></button>
+                    </p>
+                </div>
+                <textarea></textarea>
+                <button class="btn btnF sub">글쓰기완료</button>
+            </div>
 
+            <ul class="list">
+                <li>
+                    <h3>최밍구</h3>
+                    <div>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="date">2016-11-21</p>
+                    <p class="text">
+                        적극추천합니다. 너무 좋네요
+                    </p>
+                </li>
+                <li>
+                    <h3>최밍구</h3>
+                    <div>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="date">2016-11-21</p>
+                    <p class="text">
+                        적극추천합니다. 너무 좋네요
+                    </p>
+                </li>
+                <li>
+                    <h3>최밍구</h3>
+                    <div>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star on" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="date">2016-11-21</p>
+                    <p class="text">
+                        적극추천합니다. 너무 좋네요
+                    </p>
+                </li>
+            </ul>
 
-
+        </section>
 
     </article>
     <!-- E:mainContent -->

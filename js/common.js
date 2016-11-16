@@ -6,26 +6,18 @@ $(document).ready(function() {
 	}, false);
 
     $('.all-menu').click(function(){
-        $('aside#all-menu').css('height', $('document').height());
         $('aside#all-menu').css('display', 'block');
-        $(document).on("mousewheel.disableScroll DOMMouseScroll.disableScroll touchmove.disableScroll", function(e) {
-            e.preventDefault();
-            return;
-        });
-        $(document).on("keydown.disableScroll", function(e) {
-            var eventKeyArray = [32, 33, 34, 35, 36, 37, 38, 39, 40];
-            for (var i = 0; i < eventKeyArray.length; i++) {
-                if (e.keyCode === eventKeyArray [i]) {
-                    e.preventDefault();
-                    return;
-                }
-            }
-        });
+        $('body').css({overflow: 'hidden'});
+        $('aside#all-menu').css('height', $(document).height());
+        $('aside#all-menu nav').css('height', $(document).height());
+
+
     });
     $('aside#all-menu .close').click(function(){
         $('aside#all-menu').css('display', 'none');
-        $(document).off(".disableScroll");
+        $('body').css({overflow: ''});
     });
+
 
     $('aside#all-menu h2 a').click(function(){
         $('aside#all-menu div.sub').css('display', 'none');
@@ -85,5 +77,44 @@ $(document).ready(function() {
     });
 
 
+    if (($('.view-tabs').length > 0)) {
+        var tabScroll;
+        $(window).load(function() {
+            tabScroll = $('.view-tabs').offset().top;
+        });
+
+        $(window).bind('scroll', function () {
+            var winScroll = $(document).scrollTop();
+
+
+            if (winScroll > tabScroll) {
+                $('.view-tabs').addClass('fixed');
+                $('.tab-data').addClass('fixed');
+
+            } else {
+                $('.view-tabs').removeClass('fixed');
+                $('.tab-data').removeClass('fixed');
+            }
+        });
+     }
+
+     $('.view-tabs a').on('click', function() {
+         var reValue = $(this).attr("href");
+         $(".view-tabs a").removeClass("active");
+         $(this).addClass("active");
+
+         $(".tab-data").removeClass("active");
+         $(".tab-data" + reValue).addClass("active");
+     });
+     
+     $('.stars button').on('click', function() {
+          var starValue = $(this).attr("data");
+           $(".stars button").find("i").removeClass("on");
+           $(".stars button").each(function() {
+               if ($(this).attr("data") <= starValue) {
+                   $(this).find("i").addClass("on");
+               }
+           });
+      });
 
 });
