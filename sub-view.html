@@ -198,12 +198,12 @@
             </div>
         </section>
         <ul class="view-tabs">
-            <li><a class="active" href="#product-info">상품정보</a></li>
-            <li><a href="#delivery">배송/반품</a></li>
-            <li><a href="#comment">상품평</a></li>
-            <li><a href="#qna">상품Q&amp;A</a></li>
+            <li><a class="active" data="product-info">상품정보</a></li>
+            <li><a data="delivery">배송/반품</a></li>
+            <li><a data="comment">상품평</a></li>
+            <li><a data="qna">상품Q&amp;A</a></li>
         </ul>
-        <section id="product-info" class="tab-data">
+        <section id="product-info" class="tab-data active">
             <img src="http://www.gifpng.com/1000x1000" alt="상품정보">
         </section>
         <section id="delivery" class="tab-data">
@@ -227,18 +227,16 @@
                 </li>
             </ul>
         </section>
-        <section id="comment" class="tab-data active">
+        <section id="comment" class="tab-data">
             <h2>상품평</h2>
             <div class="reply-write">
+                <h3>상품평 쓰기</h3>
                 <div class="stars">
-                    <h3>상품평 쓰기</h3>
-                    <p>
-                        <button data="1"><i class="fa fa-star" aria-hidden="true"></i></button>
-                        <button data="2"><i class="fa fa-star" aria-hidden="true"></i></button>
-                        <button data="3"><i class="fa fa-star" aria-hidden="true"></i></button>
-                        <button data="4"><i class="fa fa-star" aria-hidden="true"></i></button>
-                        <button data="5"><i class="fa fa-star" aria-hidden="true"></i></button>
-                    </p>
+                    <button data="1"><i class="fa fa-star" aria-hidden="true"></i></button>
+                    <button data="2"><i class="fa fa-star" aria-hidden="true"></i></button>
+                    <button data="3"><i class="fa fa-star" aria-hidden="true"></i></button>
+                    <button data="4"><i class="fa fa-star" aria-hidden="true"></i></button>
+                    <button data="5"><i class="fa fa-star" aria-hidden="true"></i></button>
                 </div>
                 <textarea></textarea>
                 <button class="btn btnF sub">글쓰기완료</button>
@@ -293,16 +291,7 @@
         <section id="qna" class="tab-data">
             <h2>질문과 답변</h2>
             <div class="reply-write">
-                <div class="stars">
-                    <h3>질문하기</h3>
-                    <p>
-                        <button data="1"><i class="fa fa-star" aria-hidden="true"></i></button>
-                        <button data="2"><i class="fa fa-star" aria-hidden="true"></i></button>
-                        <button data="3"><i class="fa fa-star" aria-hidden="true"></i></button>
-                        <button data="4"><i class="fa fa-star" aria-hidden="true"></i></button>
-                        <button data="5"><i class="fa fa-star" aria-hidden="true"></i></button>
-                    </p>
-                </div>
+                <h3>질문하기</h3>
                 <textarea></textarea>
                 <button class="btn btnF sub">글쓰기완료</button>
             </div>
@@ -310,13 +299,14 @@
             <ul class="list">
                 <li>
                     <h3>최밍구</h3>
-                    <div>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
+                    <p class="date">2016-11-21</p>
+                    <p class="text">
+                        적극추천합니다. 너무 좋네요
+                    </p>
+                </li>
+                <li class="reply">
+                    <i class='fa fa-level-up fa-rotate-90 fa-4x' aria-hidden="true"></i>
+                    <h3>판매자</h3>
                     <p class="date">2016-11-21</p>
                     <p class="text">
                         적극추천합니다. 너무 좋네요
@@ -324,27 +314,6 @@
                 </li>
                 <li>
                     <h3>최밍구</h3>
-                    <div>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <p class="date">2016-11-21</p>
-                    <p class="text">
-                        적극추천합니다. 너무 좋네요
-                    </p>
-                </li>
-                <li>
-                    <h3>최밍구</h3>
-                    <div>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star on" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                    </div>
                     <p class="date">2016-11-21</p>
                     <p class="text">
                         적극추천합니다. 너무 좋네요

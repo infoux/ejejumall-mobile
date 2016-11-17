@@ -99,14 +99,14 @@ $(document).ready(function() {
      }
 
      $('.view-tabs a').on('click', function() {
-         var reValue = $(this).attr("href");
+         var reValue = $(this).attr("data");
          $(".view-tabs a").removeClass("active");
          $(this).addClass("active");
 
          $(".tab-data").removeClass("active");
-         $(".tab-data" + reValue).addClass("active");
+         $(".tab-data#" + reValue).addClass("active");
      });
-     
+
      $('.stars button').on('click', function() {
           var starValue = $(this).attr("data");
            $(".stars button").find("i").removeClass("on");
@@ -116,5 +116,16 @@ $(document).ready(function() {
                }
            });
       });
+
+
+
+      $('section.login .login-tabs a').on('click', function() {
+          var loginTab = $(this).attr("data");
+          $('section.login .login-tabs a').removeClass('active');
+          $(this).addClass('active');
+          $('section.login .form').removeClass('active');
+          $('section.login #'+ loginTab).addClass('active');
+      });
+
 
 });
