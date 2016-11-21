@@ -65,6 +65,12 @@ $(document).ready(function() {
     $('.view-top .btn.back').click(function(){
         history.go(-1);
     });
+
+    $('.stitle .btn').click(function(){
+        history.go(-1);
+    });
+
+
     $('.view-top select').change(function(){
         $(this).parent().find('label').html($(this).find('option:selected').val());
     });
