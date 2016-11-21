@@ -1625,6 +1625,13 @@ section.total li:last-child {
 section.total li strong {
     position:absolute;
     right:0.625rem;
+    font-weight:400;
+}
+
+section.total li div {
+    background:#eee;
+    padding:20px;
+    margin-top:10px;
 }
 
 section.order-info dl {
@@ -1641,6 +1648,13 @@ section.order-info dd {
     margin:0 0 0.625rem 6.250rem;
     width:calc(100% - 6.250rem);
     font-size:0;
+}
+
+section.order-info dd strong {
+    display:block;
+    font-size:1rem;
+    margin:0 0 0.625rem;
+    font-weight:400;
 }
 
 section.order-info input[type="text"] {
@@ -1781,12 +1795,22 @@ section.payment input[type="text"] {
     border-color:#bbb;
 }
 
-section.payment .btn-area {
+section.payment .btn-area,
+section.total .btn-area {
     margin-bottom:1.250rem;
 }
 
+section.result {
+    text-align:center;
+    padding-bottom:20px;
+}
 
-
+section.result h3 strong {
+    display:block;
+    color:#dd2a2a;
+    border-bottom:1px solid #ccc;
+    padding-bottom:20px;
+}
 
 
 
