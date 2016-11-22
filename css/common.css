@@ -35,7 +35,8 @@ body {
         min-width:320px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
     border:1px solid #eee;
     border-radius:0;
     -webkit-appearance:none;
@@ -1811,6 +1812,112 @@ section.result h3 strong {
     border-bottom:1px solid #ccc;
     padding-bottom:20px;
 }
+
+section.my-top {
+    text-align:center;
+}
+
+section.my-top strong {
+    color:#3366cc;
+}
+
+section.my-top ul {
+    font-size:0;
+    background:#fff;
+
+}
+
+section.my-top li {
+    display:inline-block;
+    width:50%;
+    font-size:1rem;
+    border:1px solid #ccc;
+    border-left:none;
+    border-top:none;
+    padding:20px 0;
+}
+
+section.my-top li strong {
+    display:block;
+}
+
+section.my-top li:nth-child(-n+2) {
+    border-top:1px solid #ccc;
+}
+
+section.my-top li:nth-child(odd) {
+    border-left:1px solid #ccc;
+}
+
+section.links a {
+    text-decoration:none;
+    color:#333;
+    display:block;
+    height:100%;
+}
+
+section.links ul {
+    border:1px solid #ccc;
+    border-top:2px solid #333;
+    background:#fff;
+    margin:0;
+
+}
+
+section.links li {
+    position:relative;
+    border-bottom:1px solid #ccc;
+    padding:0.625rem;
+}
+
+section.links li:last-child {
+    border-bottom:none;
+}
+
+section.links li i {
+    position:absolute;
+    right:0.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+section.links2 a {
+    text-decoration:none;
+    color:#333;
+    display:block;
+    height:100%;
+}
+
+section.links2 ul {
+    margin:20px 0;
+
+}
+
+section.links2 li {
+    position:relative;
+    border-bottom:1px solid #333;
+    padding:0.625rem 0;
+}
+
+section.links2 li:last-child {
+    border-bottom:none;
+}
+
+section.links2 li i {
+    position:absolute;
+    right:0.625rem;
+
+}
+
+
+
 
 
 
