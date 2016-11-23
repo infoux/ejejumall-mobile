@@ -37,7 +37,7 @@ body {
 
 input[type="text"],
 input[type="password"] {
-    border:1px solid #eee;
+    border:1px solid #ccc;
     border-radius:0;
     -webkit-appearance:none;
 }
@@ -90,6 +90,7 @@ input[type="password"] {
 .btn.btnF {
     width: 100%;
     padding: 1rem 2.500rem;
+    margin-bottom:4px;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -99,6 +100,11 @@ input[type="password"] {
     padding: 0.75rem 2.500rem;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.btn.btnSS {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.75rem;
 }
 
 /*button Color*/
@@ -118,6 +124,36 @@ input[type="password"] {
     background-color: #e2e2e2;
     color: #666;
 }
+
+/*paging*/
+.paging {
+    text-align:center;
+    padding:2rem 0;
+}
+.paging a {
+    display:inline-block;
+    width:2.250rem;
+    height:2.250rem;
+    text-align:center;
+    line-height:2.250rem;
+    background:#fff;
+    border:1px solid #ccc;
+    text-decoration:none;
+    color:#333;
+}
+
+.paging a.nav {
+    width:2.875rem;
+    background:#bbb;
+    border-color:transparent;
+}
+
+.paging a.now {
+    background:#333;
+    color:#fff;
+    border-color:transparent;
+}
+
 
 
 /*layout*/
@@ -1439,14 +1475,20 @@ section.order h3 {
     font-weight:400;
 }
 
-section.order .info-table li {
+.info-table ul {
+    list-style:none;
+    padding:10px;
+    margin:0;
+}
+
+.info-table li {
     font-size:0.750rem;
     color:#555;
     padding:0 0 0.625rem 0.375rem;
     position:relative;
 }
 
-section.order .info-table li::before {
+.info-table li::before {
     content:"·";
     position:absolute;
     left:0;
@@ -1488,6 +1530,29 @@ section.my-order h4 {
 section.my-order p.point {
     font-size:0.750rem;
 }
+
+
+section.my-order.wish h4,
+section.my-order.wish p.price,
+section.my-order.wish p.option,
+section.my-order.wish p.point {
+    padding-left:6.875rem;
+}
+
+section.my-order.wish .checkbox {
+    position:absolute;
+    left:0.625rem;
+    top:0.625rem;
+}
+
+
+section.my-order.wish p.images {
+    position:absolute;
+    left:1.875rem;
+    top:0.625rem;
+}
+
+
 
 section.my-order button {
     position:absolute;
@@ -1605,10 +1670,20 @@ section.total ul {
 
 }
 
+section.total ul ul {
+    margin-top:0.875rem;
+    border:none;
+}
+
 section.total li {
     position:relative;
     border-bottom:1px solid #ccc;
     padding:0.625rem;
+}
+
+section.total ul ul li {
+    background:#efefef;
+    border-bottom:1px solid #fff;
 }
 
 section.total li.result strong {
@@ -1619,6 +1694,14 @@ section.total li.point strong {
     color:#3366cc;
 }
 
+section.total li.result li strong {
+    color:#333;
+}
+section.total li.result strong small {
+    color:#333;
+    padding-left:0.625rem;
+}
+
 section.total li:last-child {
     border-bottom:none;
 }
@@ -1627,12 +1710,13 @@ section.total li strong {
     position:absolute;
     right:0.625rem;
     font-weight:400;
+    text-align:right;
 }
 
 section.total li div {
     background:#eee;
-    padding:20px;
-    margin-top:10px;
+    padding:1.250rem;
+    margin-top:0.625rem;
 }
 
 section.order-info dl {
@@ -1915,6 +1999,606 @@ section.links2 li i {
     right:0.625rem;
 
 }
+
+
+
+
+
+
+
+section.my-address li {
+    position:relative;
+    background:#fff;
+    border:1px solid #ccc;
+    padding:0.625rem;
+    margin-bottom:0.625rem;
+    min-height:6.375rem;
+}
+
+section.my-address p.radio {
+    position:absolute;
+    left:0.625rem;
+    top:0.625rem;
+}
+
+
+section.my-address h4,
+section.my-address p.address,
+section.my-address p.phone {
+    padding-left:20px;
+}
+
+section.my-address h4 {
+    margin:0px 0 0.625rem;
+}
+
+section.my-address h3 {
+    position:relative;
+}
+
+section.my-address h3 a {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+section.my-address p.phone,
+section.my-address p.mobile {
+    display:inline-block;
+    line-height:1.6;
+}
+
+section.my-address p.mobile::before {
+    content:"|";
+    font-size:12px;
+    position:relative;
+    padding:0 10px;
+    top:-2px;
+
+}
+
+
+
+
+
+section.my-bank h3 {
+    position:relative;
+}
+
+
+section.my-bank h3 a {
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+
+section.my-bank li {
+    position:relative;
+    background:#fff;
+    border:1px solid #ccc;
+    padding:0.625rem;
+    margin-bottom:0.625rem;
+}
+
+section.my-bank p.radio {
+    position:absolute;
+    left:0.625rem;
+    top:0.625rem;
+}
+
+
+section.my-bank h4 {
+    padding-left:20px;
+    margin:0px;
+}
+
+section.my-bank p.name {
+    position:absolute;
+    right:0.625rem;
+    top:0.625rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section.delivery-result>ul li {
+    position:relative;
+    background:#fff;
+    border:1px solid #ccc;
+    padding:0.625rem;
+    margin-bottom:0.625rem;
+    min-height:150px;
+}
+
+section.delivery-result p.images {
+    position:absolute;
+    left:0.625rem;
+    top:58px;
+}
+
+section.delivery-result p.images img {
+    width:5rem;
+    height:auto;
+}
+
+section.delivery-result>ul li h4 {
+    position:relative;
+    margin:0px;
+    padding:10px;
+    background:#333;
+    color:#fff;
+}
+
+section.delivery-result>ul li h4 a {
+    position:absolute;
+    right:0;
+    top:0;
+    color:#ccff00;
+}
+
+
+section.delivery-result h5 {
+    margin:10px 0 10px;
+    font-size:1rem;
+}
+
+section.delivery-result h5,
+section.delivery-result p.price,
+section.delivery-result div.price,
+section.delivery-result p.option,
+section.delivery-result p.point {
+    padding-left:5.625rem;
+}
+
+
+section.delivery-result p.marker {
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    color:#f15e0e;
+    font-weight:600;
+}
+
+section.delivery-result div.price p {
+    display:inline-block;
+    padding-right:10px;
+}
+
+section.delivery-result div.price strong {
+    color:#dd2a2a;
+}
+
+
+
+
+
+
+
+
+
+
+section.delivery-info dl {
+    border:1px solid #887042;
+    background:#fff;
+    padding:0.625rem;
+}
+
+section.delivery-info dt {
+    float:left;
+}
+
+section.delivery-info dd {
+    margin:0 0 0.625rem 6.250rem;
+    width:calc(100% - 6.250rem);
+    font-size:0;
+}
+
+section.delivery-info input[type="text"] {
+    height:2.250rem;
+    width:100%;
+    line-height:2.250rem;
+    font-size:1rem;
+    padding:0 0.625rem;
+    margin-bottom:0.625rem;
+    border-color:#ccc;
+}
+
+section.delivery-info input.withBtn {
+    width:calc(100% - 6.250rem);
+}
+
+section.delivery-info button {
+    width:6.250rem;
+    height:2.250rem;
+    font-size:0.75rem;
+    vertical-align:top;
+    border-left:none;
+    font-size:0;
+}
+
+section.delivery-info button i {
+    font-size:1rem;
+}
+
+section.delivery-info select {
+    height:2.250rem;
+    width:100%;
+    line-height:2.250rem;
+    font-size:1rem;
+    padding:0 0.625rem;
+    margin-bottom:0.625rem;
+}
+
+
+
+
+section.address-reg {
+    display:inline-block;
+    width:100%;
+    padding:0 0.625rem;
+    background:#eee;
+}
+
+section.address-reg dl {
+    background:#fff;
+    border-top:2px solid #333;
+}
+section.address-reg dt {
+    padding:20px 20px 0;
+    margin:0 0 10px;
+}
+
+section.address-reg dd {
+    padding:0 20px 20px ;
+    margin:0;
+    font-size:0;
+    border-bottom:1px solid #eee;
+}
+
+section.address-reg dt.left {
+    float:left;
+    margin:0;
+    padding:20px ;
+}
+
+section.address-reg dd.left {
+    margin:0;
+    padding:20px;
+    font-weight:400;
+}
+
+
+
+section.address-reg dd p {
+    margin:0;
+}
+
+section.address-reg dd label {
+    font-size:1rem;
+    padding-left:6px;
+}
+
+
+section.address-reg input[type="text"] {
+    height:2.250rem;
+    width:100%;
+    line-height:2.250rem;
+    font-size:1rem;
+    padding:0 0.625rem;
+    margin-bottom:0.625rem;
+    border-color:#bbb;
+}
+
+
+section.address-reg input.tel {
+    width:calc((100% - 2.500rem) / 3);
+}
+
+section.address-reg input.mail {
+    width:calc((100% - 1.250rem) / 2);
+}
+
+
+section.address-reg input.withBtn {
+    width:calc(100% - 6.250rem);
+}
+
+section.address-reg button.btnS {
+    width:6.250rem;
+    height:2.250rem;
+    font-size:0.75rem;
+    vertical-align:top;
+    border-left:none;
+}
+
+section.address-reg select {
+    height:2.250rem;
+    width:100%;
+    line-height:2.250rem;
+    font-size:1rem;
+    padding:0 0.625rem;
+    margin-bottom:0.625rem;
+}
+
+section.address-reg i {
+    display:inline-block;
+    font-style:normal;
+    font-size:1rem;
+    width:1.250rem;
+    text-align:center;
+}
+
+section.address-reg i.info {
+    width:auto;
+}
+
+section.address-reg strong {
+    font-size:1rem;
+}
+
+
+section.point-list {
+    display:inline-block;
+    width:100%;
+    padding:0 10px;
+    background:#eee;
+}
+
+section.point-list p.head {
+    margin:10px;
+    background:#fff;
+    padding:20px;
+    text-align:center;
+    line-height:1.6;
+}
+
+section.point-list p.head strong {
+    color:#dd2a2a;
+}
+
+table.info-list {
+    width:100%;
+    margin:20px 0 10px;
+}
+
+table.info-list th,
+table.info-list td {
+    padding:10px 0;
+    text-align:center;
+}
+
+table.info-list th {
+    background:#333;
+    color:#fff;
+}
+
+table.info-list td:first-child {
+    text-align:left;
+    padding:10px;
+    color:#999;
+    width:200px;
+}
+
+table.info-list td {
+    background:#fff;
+    border-bottom:1px solid #ccc;
+}
+
+table.info-list h4 {
+    text-align:left;
+    width:100%;
+    margin:4px 0;
+    font-size:1rem;
+    color:#333;
+    font-weight:400;
+}
+
+table.info-list i {
+    font-style:normal;
+    color:#3366cc;
+}
+
+table.info-list strong {
+    font-weight:400;
+    color:#dd2a2a;
+}
+
+
+section.point-list .input {
+    font-size:0;
+    border:3px solid #ccc;
+    margin:10px;
+    padding:20px;
+    background:#fff;
+}
+
+section.point-list .input input {
+    font-size:1rem;
+    width:calc((100% - 110px) / 3);
+    margin-right:10px;
+    height:40px;
+    vertical-align:top;
+    padding:0 10px;
+}
+
+section.point-list .input .btn {
+    width:80px;
+    height:40px;
+    vertical-align:top;
+}
+
+
+
+
+section.wish-list {
+    display:inline-block;
+    width:100%;
+    padding:0 10px;
+    background:#eee;
+}
+
+section.wish-list p.head {
+    margin:10px;
+    background:#fff;
+    padding:20px;
+    text-align:center;
+    line-height:1.6;
+}
+
+section.wish-list p.head strong {
+    color:#dd2a2a;
+}
+
+
+section.wish-list .input {
+    font-size:0;
+    border:3px solid #ccc;
+    margin:10px;
+    padding:20px;
+    background:#fff;
+}
+
+section.wish-list .input input {
+    font-size:1rem;
+    width:calc((100% - 110px) / 3);
+    margin-right:10px;
+    height:40px;
+    vertical-align:top;
+    padding:0 10px;
+}
+
+section.wish-list .input .btn {
+    width:80px;
+    height:40px;
+    vertical-align:top;
+}
+
+
+
+section.inquiry {
+    display:inline-block;
+    width:100%;
+    padding:0 10px;
+    background:#eee;
+}
+
+section.inquiry p.head {
+    margin:10px;
+    background:#fff;
+    padding:20px;
+    text-align:center;
+    line-height:1.6;
+}
+
+section.inquiry p.head strong {
+    color:#dd2a2a;
+}
+
+
+section.inquiry table.info-list td:first-child {
+    width:calc(100% - 7.5rem);
+}
+section.inquiry table.info-list td:last-child {
+    width:7.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section.inquiry-reg {
+    display:inline-block;
+    width:100%;
+    padding:0 0.625rem;
+    background:#eee;
+}
+
+section.inquiry-reg dl {
+    background:#fff;
+    border-top:2px solid #333;
+}
+section.inquiry-reg dt {
+    padding:20px 20px 0;
+    margin:0 0 10px;
+}
+
+section.inquiry-reg dd {
+    padding:0 20px 20px ;
+    margin:0;
+    font-size:0;
+    border-bottom:1px solid #eee;
+}
+
+section.inquiry-reg dt.left {
+    float:left;
+    margin:0;
+    padding:20px ;
+}
+
+section.inquiry-reg dd.left {
+    margin:0;
+    padding:20px;
+    font-weight:400;
+}
+
+
+
+section.inquiry-reg dd p {
+    margin:0;
+}
+
+section.inquiry-reg dd label {
+    font-size:1rem;
+    padding-left:6px;
+}
+
+
+section.inquiry-reg input[type="text"] {
+    height:2.250rem;
+    width:100%;
+    line-height:2.250rem;
+    font-size:1rem;
+    padding:0 0.625rem;
+    margin-bottom:0.625rem;
+    border-color:#bbb;
+}
+
+
+section.inquiry-reg select {
+    height:2.250rem;
+    width:100%;
+    line-height:2.250rem;
+    font-size:1rem;
+    padding:0 0.625rem;
+    margin-bottom:0.625rem;
+}
+
+section.inquiry-reg textarea {
+    vertical-align:top;
+    height:6.364rem;;
+
+    width:100%;
+    font-size:1rem;
+    padding:0.625rem;
+    margin-bottom:0.625rem;
+}
+
 
 
 
