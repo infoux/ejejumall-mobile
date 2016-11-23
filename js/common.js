@@ -123,6 +123,12 @@ $(document).ready(function() {
            });
       });
 
+    $('section.join-agree .btn').on('click', function() {
+        var agree = $(this).attr("data");
+        $('section.join-agree textarea#'+ agree).toggle();
+console.log(agree);
+
+    });
 
 
       $('section.login .login-tabs a').on('click', function() {
