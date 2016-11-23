@@ -300,6 +300,42 @@ aside#all-menu h1 strong {
     background:url('../images/logo-c.png') no-repeat center / 100%;
 }
 
+aside#all-menu .btn-set {
+    padding:20px;
+    font-size:0;
+}
+
+aside#all-menu .btn-set a {
+    display:inline-block;
+    width:calc(100% / 3);
+    font-size:1rem;
+    border:1px solid #ccc;
+    border-left:none;
+    text-align:center;
+    padding:20px 0;
+    text-decoration:none;
+    color:#333;
+    font-size:0.750rem;
+    background:#f8f8f8;
+}
+
+aside#all-menu .btn-set a:nth-of-type(-n+3) {
+    border-bottom:none;
+}
+
+aside#all-menu .btn-set a:first-child,
+aside#all-menu .btn-set a:nth-of-type(4) {
+    border-left:1px solid #ccc;
+}
+
+aside#all-menu .btn-set i {
+    display:block;
+    font-size:2rem;
+    color:#f15e0e;
+    margin-bottom:1rem;
+}
+
+
 aside#all-menu nav h2 {
     margin:0;
     padding:0 1.25rem;
@@ -1929,7 +1965,7 @@ section.total li div {
 section.order-info dl {
     border:1px solid #887042;
     background:#fff;
-    padding:0.625rem;
+    padding:1.250rem 1.250rem 0.625rem;
 }
 
 section.order-info dt {
@@ -2694,7 +2730,7 @@ section.inquiry-reg dt.left {
 
 section.inquiry-reg dd.left {
     margin:0;
-    padding:20px;
+    padding:1.250rem;
     font-weight:400;
 }
 
@@ -2735,6 +2771,143 @@ section.inquiry-reg textarea {
     margin-bottom:0.625rem;
 }
 
+
+section.customer {
+    padding:10px 10px 10px;
+    background:#eee;
+}
+
+section.customer h3 {
+    position:relative;
+}
+
+section.customer h3 a {
+    font-size:0;
+    padding:10px;
+    position:absolute;
+    right:0;
+}
+section.customer h3 i {
+    font-size:1rem;
+    color:#999;
+}
+
+
+section.customer.faq fieldset {
+    padding:0;
+    margin:0;
+    font-size:0;
+    background:#fff;
+    border:2px solid #ccc;
+}
+
+section.customer.faq fieldset input[type="text"] {
+    height:2.250rem;
+    width:calc(100% - 50px);
+    line-height:2.250rem;
+    font-size:1rem;
+    padding:0 0.625rem;
+    border-color:#bbb;
+    border:none;
+}
+
+section.customer.faq fieldset button {
+    width:50px;
+    border:none;
+    background:none;
+    vertical-align:center;
+}
+
+section.customer.faq fieldset button i {
+    font-size:1.250rem;
+}
+
+section.customer.faq .select {
+    background:#333;
+    padding:10px;
+    margin:20px 0 -18px;
+}
+
+section.customer.faq .select select {
+    display:block;
+    padding:0 0.625rem;
+    width:100%;
+    height:2.500rem;
+    margin-bottom:0.250rem;
+    font-size:1rem;
+}
+
+
+
+section.customer ul {
+    border:1px solid #ccc;
+    border-top:2px solid #333;
+    background:#fff;
+    margin:0;
+    padding:0;
+    list-style:none;
+    margin-top:20px;
+
+}
+
+section.customer li {
+    position:relative;
+    border-bottom:1px solid #ccc;
+    padding:0.625rem;
+}
+
+section.customer li:last-child {
+    border-bottom:none;
+}
+
+
+section.customer.faq li i {
+    position:absolute;
+    right:0.625rem;
+}
+
+section.customer.faq li div {
+    display:none;
+    background:#f8f8f8;
+    margin:10px -9px -9px;
+    padding:20px;
+}
+
+section.customer.notice a {
+    text-decoration:none;
+    color:#333;
+}
+section.customer.notice li {
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+section.customer.notice li i {
+    font-style:normal;
+    padding-right:10px;
+    color:#999;
+}
+
+section.customer.notice.view h3 {
+    text-align:center;
+}
+
+section.customer.notice.view .date {
+    margin:10px auto;
+    text-align:center;
+}
+
+section.customer.notice.view .text {
+    display:inline-block;
+    width:100%;
+    border:1px solid #333;
+    border-left:none;
+    border-right:none;
+    padding:20px;
+    margin-top:10px;
+    background:#fff;
+}
 
 /*footer*/
 

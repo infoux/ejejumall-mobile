@@ -148,136 +148,56 @@
     </aside>
     <!-- S:mainContent -->
     <article id="content">
-        <h2 class="stitle">주문배송조회 <small><button class="btn"><i class="fa fa-angle-left" aria-hidden="true"></i>뒤로가기</button></small></h2>
+        <h2 class="stitle">고객센터 <small><button class="btn"><i class="fa fa-angle-left" aria-hidden="true"></i>뒤로가기</button></small></h2>
 
-        <section class="order delivery-result">
-            <h3 class="sr-only">주문할 상품</h3>
+        <section class="customer faq">
+            <h3>FAQ <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>더보기</a></h3>
+            <fieldset>
+               <legend class="sr-only"><label for="faq">faq 검색</label></legend>
+               <input id="faq" type="text" placeholder="FAQ 검색">
+               <button><i class="fa fa-search" aria-hidden="true"></i>검색</button>
+            </fieldset>
+
+
             <ul>
-                <li>
-                    <h4>2016-11-21(A1632600594607)<a class="btn btnS sub" href="">주문취소</a></h4>
-                    <p class="images">
-                        <img src="http://www.gifpng.com/80x80" alt="">
-                    </p>
-                    <h5>건고사리선물세트</h5>
-                    <p class="price">
-                        36,000원 x 2 = <strong>72,000원</strong>
-                    </p>
-                    <p class="marker">
-                        입금확인중
-                    </p>
+                <li>질문이 있습니다.<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div>
+                        하지마세요
+                    </div>
+                </li>
+                <li>궁금한게 있습니다<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div>
+                        하지마세요
+                    </div>
+                </li>
+                <li>심심합니다<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div>
+                        하지마세요
+                    </div>
+                </li>
+                <li>이름이 뭐에요<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div>
+                        최밍구 입니다.
+                    </div>
                 </li>
             </ul>
+
         </section>
-        <section class="order total">
-            <h3>결제정보</h3>
-            <ul>
-                <li>주문금액 <strong>9,150원</strong>
+
+        <section class="customer notice">
+            <h3>공지사항 <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>더보기</a></h3>
+
+
                     <ul>
-                        <li>상품금액 <strong>9,150원</strong></li>
-                        <li>배송비 <strong>0원</strong></li>
+                        <li><a href=""><i>[2016-11-21]</i>마일리지 이벤트</a></li>
+                        <li><a href=""><i>[2016-11-21]</i>개인정보처리방침 개정 안내입니다.</a></li>
+                        <li><a href=""><i>[2016-11-21]</i>전자금융거래이용약관 개정 공지의 건(2016년 11월 6일 시행)</a></li>
+                        <li><a href=""><i>[2016-11-21]</i>마일리지 이벤트</a></li>
+                        <li><a href=""><i>[2016-11-21]</i>마일리지 이벤트</a></li>
                     </ul>
-                </li>
-                <li class="result">할인금액 <strong>-1,200원</strong>
-                    <ul>
-                        <li>회원할인 <strong>1200원</strong></li>
-                    </ul>
-                </li>
-                <li class="result">결제금액 <strong>9,150원<small>온라인입금</small></strong></li>
-                <li>계좌정보 <div><p>하나은행 46549687456784</p><p>예금주 : 설현</p><p>입금자명 : 최밍구</p></div></li>
-                <li>적립금 <strong>120원</strong></li>
-                <li>주문일시 <strong>2016-11-21 22:06:42</strong></li>
-            </ul>
-        </section>
 
-        <section class="order order-info">
-            <h3>배송지 주소</h3>
-            <div class="left">
-                <h4>주문하시는 분</h4>
-                <dl>
-                    <dt><label for="myname">고객명</label></dt>
-                    <dd><input id="myname" class="default" type="text"></dd>
-                    <dt><label for="myaddress1">거주지 주소</label></dt>
-                    <dd>
-                        <p><input id="myzipcode" class="withBtn" type="text"><button class="btn btnS default">우편번호찾기</button></p>
-                        <p><input id="myaddress1" class="full" type="text"></p>
-                        <p><input id="myaddress2" class="full" type="text"></p>
-                    </dd>
-                    <dt><label for="mytel1">전화번호</label></dt>
-                    <dd>
-                        <input id="mytel1" class="tel" type="text">
-                        <i>-</i>
-                        <input id="mytel2" class="tel" type="text">
-                        <i>-</i>
-                        <input id="mytel3" class="tel" type="text">
-                    </dd>
-                    <dt><label for="mymob1">휴대폰번호</label></dt>
-                    <dd>
-                        <input id="mymob1" class="tel" type="text">
-                        <i>-</i>
-                        <input id="mymob2" class="tel" type="text">
-                        <i>-</i>
-                        <input id="mymob3" class="tel" type="text">
-                    </dd>
-                    <dt><label for="mymail1">이메일주소</label></dt>
-                    <dd>
-                        <input id="mymail1" class="mail" type="text">
-                        <i>@</i>
-                        <input id="mymail2" class="mail" type="text">
-                        <select>
-                            <option>gmail.com</option>
-                        </select>
-                    </dd>
-                </dl>
-            </div>
-            <div class="right">
-                <h4>
-                    받으시는 분
-                </h4>
-                <dl>
-                    <dt><label for="name">받으시는 분</label></dt>
-                    <dd><input id="name" class="default" type="text"></dd>
-                    <dt><label for="address1">배송지 주소</label></dt>
-                    <dd>
-                        <p><input id="zipcode" class="withBtn" type="text"><button class="btn btnS default">우편번호찾기</button></p>
-                        <p><input id="address1" class="full" type="text"></p>
-                        <p><input id="address2" class="full" type="text"></p>
-                    </dd>
-                    <dt><label for="tel1">전화번호</label></dt>
-                    <dd>
-                        <input id="tel1" class="tel" type="text">
-                        <i>-</i>
-                        <input id="tel2" class="tel" type="text">
-                        <i>-</i>
-                        <input id="tel3" class="tel" type="text">
-                    </dd>
-                    <dt><label for="mob1">휴대폰번호</label></dt>
-                    <dd>
-                        <input id="mob1" class="tel" type="text">
-                        <i>-</i>
-                        <input id="mob2" class="tel" type="text">
-                        <i>-</i>
-                        <input id="mob3" class="tel" type="text">
-                    </dd>
-                    <dt><label for="mymail1">배송유의사항</label></dt>
-                    <dd>
-                        <textarea class="full"></textarea>
-                    </dd>
-                </dl>
-            </div>
-        </section>
-        <section class="order total">
-            <h3>증빙요청내용</h3>
-            <ul>
-                <li>증빙요청 <strong>현금영수증 개인소득공제</strong></li>
-                <li>내용 <strong>010-0100-0101</strong></li>
-            </ul>
+                </section>
 
-            <div class="btn-area center">
-                <a class="btn btnF sub" href="">배송정보변경</a>
-                <a class="btn btnF default" href="">목록으로</a>
-            </div>
-
-        </section>
 
     </article>
     <!-- E:mainContent -->

@@ -126,7 +126,7 @@ $(document).ready(function() {
     $('section.join-agree .btn').on('click', function() {
         var agree = $(this).attr("data");
         $('section.join-agree textarea#'+ agree).toggle();
-console.log(agree);
+
 
     });
 
@@ -138,6 +138,13 @@ console.log(agree);
           $('section.login .form').removeClass('active');
           $('section.login #'+ loginTab).addClass('active');
       });
+
+      $('section.customer.faq li').on('click', function() {
+          $(this).find('div').toggle();
+
+      });
+
+
 
 
 });
