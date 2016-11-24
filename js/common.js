@@ -70,6 +70,10 @@ $(document).ready(function() {
         history.go(-1);
     });
 
+    $('h1 .btn.close').click(function(){
+        self.close();
+    });
+
 
     $('.view-top select').change(function(){
         $(this).parent().find('label').html($(this).find('option:selected').val());
@@ -151,7 +155,12 @@ $(document).ready(function() {
             $('section.intro #'+ introTab).addClass('active');
         });
 
+        $('button.zipcode').on('click', function() {
+          $('div.zipcode').toggle();
+        });
 
-
+        $('div.zipcode button').on('click', function() {
+          $('div.zipcode').toggle();
+        });
 
 });

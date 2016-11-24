@@ -3166,11 +3166,110 @@ footer#footer address p {
 
 
 
+/*팝업*/
+header#popup {
+    position:relative;
+    z-index:500;
+    width:100%;
+    margin:0;
+    background:#333;
+    height:3.875rem;
+    text-align:center;
+    color:#fff;
+}
 
+header#popup h1 {
+    display:inline-block;
+    font-size:1.750rem;
 
+}
 
+header#popup h1 button {
+    position:absolute;
+    right:0.625rem;
+    top:1.250rem;
+    color:#fff;
+    font-size:0;
+    background:none;
+}
+header#popup h1 button i {
+    font-size:1.25rem;
+}
 
+article#popupContents section.coupon {
+    display:inline-block;
+    width:100%;
+    background:#eee;
 
+}
 
+article#popupContents section.coupon ul {
+    padding:0;
+    margin:0.625rem;
+    list-style:none;
+}
+
+article#popupContents section.coupon li {
+    background:#fff;
+    border:1px solid #ccc;
+    padding:0.625rem;
+}
+
+article#popupContents section.coupon li h4 {
+    margin:0 0 0.625rem;
+}
+
+article#popupContents section.coupon li p {
+    margin:0.625rem 0;
+}
+
+article#popupContents section.coupon select {
+    display:block;
+    padding:0 0.625rem;
+    width:100%;
+    height:2.500rem;
+    margin-bottom:0.250rem;
+    font-size:1rem;
+}
+
+article#popupContents section.coupon p.sum {
+    background:#fff;
+    margin:0 0.625rem;
+    padding:1.250rem;
+    text-align:center;
+
+}
+
+article#popupContents section.coupon p.sum strong {
+    color:#dd2a2a;
+}
+
+div.zipcode {
+    position:fixed;
+    display:none;
+    left:10vw;
+    top:20vh;
+    z-index:800;
+    background:#fff;
+    border:3px solid #333;
+    width:80vw;
+    height:60vh;
+}
+
+div.zipcode button {
+    position:absolute;
+    right:0;
+    top:0;
+    width:2.000rem;
+    height:2.000rem;
+    background:none;
+    color:#333;
+    font-size:0;
+    border:none;
+}
+
+div.zipcode button i {
+    font-size:1.25rem;
+}
 
 /**/
