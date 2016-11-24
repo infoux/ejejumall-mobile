@@ -141,8 +141,15 @@ $(document).ready(function() {
 
       $('section.customer.faq li').on('click', function() {
           $(this).find('div').toggle();
-
       });
+
+        $('section.intro .tabs a').on('click', function() {
+            var introTab = $(this).attr("data");
+            $('section.intro .tabs a').removeClass('active');
+            $(this).addClass('active');
+            $('section.intro .store').removeClass('active');
+            $('section.intro #'+ introTab).addClass('active');
+        });
 
 
 

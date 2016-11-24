@@ -2773,7 +2773,7 @@ section.inquiry-reg textarea {
 
 
 section.customer {
-    padding:10px 10px 10px;
+    padding:0.625rem 0.625rem 0.625rem;
     background:#eee;
 }
 
@@ -2783,7 +2783,7 @@ section.customer h3 {
 
 section.customer h3 a {
     font-size:0;
-    padding:10px;
+    padding:0.625rem;
     position:absolute;
     right:0;
 }
@@ -2803,7 +2803,7 @@ section.customer.faq fieldset {
 
 section.customer.faq fieldset input[type="text"] {
     height:2.250rem;
-    width:calc(100% - 50px);
+    width:calc(100% - 3.125rem);
     line-height:2.250rem;
     font-size:1rem;
     padding:0 0.625rem;
@@ -2812,7 +2812,7 @@ section.customer.faq fieldset input[type="text"] {
 }
 
 section.customer.faq fieldset button {
-    width:50px;
+    width:3.125rem;
     border:none;
     background:none;
     vertical-align:center;
@@ -2824,8 +2824,8 @@ section.customer.faq fieldset button i {
 
 section.customer.faq .select {
     background:#333;
-    padding:10px;
-    margin:20px 0 -18px;
+    padding:0.625rem;
+    margin:1.250rem 0 -1.125rem;
 }
 
 section.customer.faq .select select {
@@ -2846,7 +2846,7 @@ section.customer ul {
     margin:0;
     padding:0;
     list-style:none;
-    margin-top:20px;
+    margin-top:1.250rem;
 
 }
 
@@ -2869,11 +2869,11 @@ section.customer.faq li i {
 section.customer.faq li div {
     display:none;
     background:#f8f8f8;
-    margin:10px -9px -9px;
-    padding:20px;
+    margin:0.625rem -0.563rem -0.563rem;
+    padding:1.250rem;
 }
 
-section.customer.notice a {
+section.customer.notice li a {
     text-decoration:none;
     color:#333;
 }
@@ -2885,7 +2885,7 @@ section.customer.notice li {
 }
 section.customer.notice li i {
     font-style:normal;
-    padding-right:10px;
+    padding-right:0.625rem;
     color:#999;
 }
 
@@ -2894,7 +2894,7 @@ section.customer.notice.view h3 {
 }
 
 section.customer.notice.view .date {
-    margin:10px auto;
+    margin:0.625rem auto;
     text-align:center;
 }
 
@@ -2904,9 +2904,166 @@ section.customer.notice.view .text {
     border:1px solid #333;
     border-left:none;
     border-right:none;
-    padding:20px;
-    margin-top:10px;
+    padding:1.250rem;
+    margin-top:0.625rem;
     background:#fff;
+}
+
+section.intro {
+    padding:0 0.625rem;
+    line-height:1.4;
+}
+
+section.intro h3 {
+    text-align:center;
+    font-weight:400;
+    line-height:1.6;
+    word-break:keep-all;
+}
+
+section.intro h3 strong {
+    display:block;
+    color:#3366cc;
+}
+
+section.intro h4 {
+    color:#3366cc;
+}
+
+section.intro h5 {
+    font-size:1rem;
+}
+
+section.intro .list-type01 {
+    padding:1.250rem;
+    background:#efefef;
+}
+
+
+section.intro .list-type02 {
+    padding:1.250rem;
+    background:#efefef;
+    list-style:none;
+}
+
+section.intro .list-type02 li::before {
+    content:"-";
+    padding-right:6px;
+}
+
+section.intro dt {
+    float:left;
+    color:#999;
+}
+
+section.intro dd {
+    margin:0;
+    padding:0 0 0.625rem 4.375rem;
+}
+
+section.intro img {
+    max-width:100%;
+}
+
+section.intro .simbol {
+    padding:1.250rem;
+    background:#e2e2e2;
+    position:relative;
+}
+
+section.intro .simbol img {
+    position:absolute;
+    left:1.250rem;
+    top:1.250rem;
+    width:4.375rem;
+    height:auto;
+
+}
+
+section.intro .simbol h4 {
+    padding-left:6.250rem;
+    margin:0;
+}
+
+section.intro .simbol p {
+    padding-left:6.250rem;
+    margin-bottom:0;
+}
+
+section.intro .tabs {
+    font-size:0;
+    margin:20px 0 10px;
+    padding:0;
+    list-style:none;
+}
+
+section.intro .tabs li {
+    display:inline-block;
+    width:calc(100% / 3);
+}
+
+section.intro .tabs a {
+    display:block;
+    font-size:1rem;
+    text-align:center;
+    border:1px solid #ccc;
+    border-bottom:1px solid #333;
+    border-left:none;
+    padding:10px 0;
+    background:#eee;
+}
+
+section.intro .tabs li:first-child a {
+    border-left:1px solid #ccc;
+}
+
+section.intro .tabs a.active {
+    border-color:#333;
+    border-bottom:none;
+    border-left:1px solid #333;
+    background:#fff;
+}
+
+section.intro .tabs li:first-child a.active {
+    border-left:1px solid #333;
+}
+
+section.intro .store {
+    display:none;
+}
+
+section.intro .store.active {
+    display:block;
+}
+
+section.intro table {
+    width:100%;
+    border-top:2px solid #333;
+}
+
+section.intro table th {
+    width:36%;
+    background:#eee;
+}
+
+section.intro table th,
+section.intro table td {
+    padding:10px 0;
+    border-bottom:1px solid #ccc;
+}
+
+section.intro table td {
+    padding:10px;
+}
+
+section.intro .blue {
+    color:#3366cc;
+}
+
+section.intro p.text {
+    padding:0 10px;
+    font-size:14px;
+
 }
 
 /*footer*/
