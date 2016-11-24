@@ -2948,7 +2948,7 @@ section.intro .list-type02 {
 
 section.intro .list-type02 li::before {
     content:"-";
-    padding-right:6px;
+    padding-right:0.375rem;
 }
 
 section.intro dt {
@@ -2992,7 +2992,7 @@ section.intro .simbol p {
 
 section.intro .tabs {
     font-size:0;
-    margin:20px 0 10px;
+    margin:1.250rem 0 0.625rem;
     padding:0;
     list-style:none;
 }
@@ -3009,7 +3009,7 @@ section.intro .tabs a {
     border:1px solid #ccc;
     border-bottom:1px solid #333;
     border-left:none;
-    padding:10px 0;
+    padding:0.625rem 0;
     background:#eee;
 }
 
@@ -3036,6 +3036,12 @@ section.intro .store.active {
     display:block;
 }
 
+section.intro div.map {
+    min-height:12.500rem;
+    margin-bottom:1.250rem;
+    background:#eee;
+}
+
 section.intro table {
     width:100%;
     border-top:2px solid #333;
@@ -3048,12 +3054,12 @@ section.intro table th {
 
 section.intro table th,
 section.intro table td {
-    padding:10px 0;
+    padding:0.625rem 0;
     border-bottom:1px solid #ccc;
 }
 
 section.intro table td {
-    padding:10px;
+    padding:0.625rem;
 }
 
 section.intro .blue {
@@ -3061,8 +3067,8 @@ section.intro .blue {
 }
 
 section.intro p.text {
-    padding:0 10px;
-    font-size:14px;
+    padding:0 0.625rem;
+    font-size:0.875rem;
 
 }
 
