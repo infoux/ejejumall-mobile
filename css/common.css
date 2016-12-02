@@ -1754,9 +1754,16 @@ section.my-order li {
     min-height:6.375rem;
 }
 
-section.my-order p.images {
+section.my-order .checkbox {
     position:absolute;
     left:0.625rem;
+    top:0.625rem;
+}
+
+
+section.my-order p.images {
+    position:absolute;
+    left:1.875rem;
     top:0.625rem;
 }
 
@@ -1770,7 +1777,7 @@ section.my-order h4,
 section.my-order p.price,
 section.my-order p.option,
 section.my-order p.point {
-    padding-left:5.625rem;
+    padding-left:6.875rem;
 }
 
 section.my-order h4 {
@@ -1781,26 +1788,6 @@ section.my-order p.point {
     font-size:0.750rem;
 }
 
-
-section.my-order.wish h4,
-section.my-order.wish p.price,
-section.my-order.wish p.option,
-section.my-order.wish p.point {
-    padding-left:6.875rem;
-}
-
-section.my-order.wish .checkbox {
-    position:absolute;
-    left:0.625rem;
-    top:0.625rem;
-}
-
-
-section.my-order.wish p.images {
-    position:absolute;
-    left:1.875rem;
-    top:0.625rem;
-}
 
 section.my-order button {
     position:absolute;
