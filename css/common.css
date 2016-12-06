@@ -1997,14 +1997,6 @@ section.order-info button.btnS {
     border-left:none;
 }
 
-section.order-info input.tel {
-    width:calc((100% - 2.500rem) / 3);
-}
-
-section.order-info input.mail {
-    width:calc((100% - 1.250rem) / 2);
-}
-
 section.order-info select {
     height:2.250rem;
     width:100%;
@@ -2013,6 +2005,17 @@ section.order-info select {
     padding:0 0.625rem;
     margin-bottom:0.625rem;
 }
+
+
+section.order-info input.tel,
+section.order-info select.tel {
+    width:calc((100% - 2.500rem) / 3);
+}
+
+section.order-info input.mail {
+    width:calc((100% - 1.250rem) / 2);
+}
+
 
 section.order-info textarea {
     vertical-align:top;
