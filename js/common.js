@@ -34,6 +34,7 @@ $(document).ready(function() {
 
     var issue = $('.main-issue .slide').bxSlider({
         controls:false,
+        adaptiveHeight: true,
         infiniteLoop:true,
         auto:true,
         pause:6000
