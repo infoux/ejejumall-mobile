@@ -7,7 +7,6 @@ $(document).ready(function() {
 
     $('.all-menu').click(function(){
         $('aside#all-menu').css('display', 'block');
-        $('body').css({overflow: 'hidden'});
         $('aside#all-menu').css('height', $(document).height());
         $('aside#all-menu nav').css('height', $(document).height());
 
