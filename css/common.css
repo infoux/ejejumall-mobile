@@ -3283,4 +3283,11 @@ div.zipcode button i {
     font-size:1.25rem;
 }
 
+section.layerBox {
+    text-align:center;
+    border:6px solid #efefef;
+    width:80%;
+    min-width:300px;
+}
+
 /**/
