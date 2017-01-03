@@ -802,6 +802,7 @@ section.sub-category a.active {
     color: #fff;
 }
 
+
 section.sub-list ul {
     padding: 0.625rem;
     margin: 0;
@@ -3303,4 +3304,15 @@ section.layerBox {
 }
 
 
-/**/
+/*이벤트*/
+
+
+section.sub-event {
+    display:inline-block;
+    width:100%;
+    margin-bottom:30px;
+}
+
+section.sub-event img {
+    max-width:100%;
+}
