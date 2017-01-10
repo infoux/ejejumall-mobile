@@ -802,7 +802,6 @@ section.sub-category a.active {
     color: #fff;
 }
 
-
 section.sub-list ul {
     padding: 0.625rem;
     margin: 0;
@@ -3306,13 +3305,40 @@ section.layerBox {
 
 /*이벤트*/
 
-
 section.sub-event {
-    display:inline-block;
-    width:100%;
-    margin-bottom:30px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 section.sub-event img {
-    max-width:100%;
+    max-width: 100%;
+}
+
+
+/*환불신청*/
+
+section.order.total div.sum {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #887042;
+    text-align: center;
+}
+
+section.order.total div.sum h4 {
+    margin: 0 0 14px;
+}
+
+section.order.total div.sum p {
+    display: inline-block;
+    text-align: center;
+}
+
+section.order.total div.sum p.result {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+section.order.total div.sum p.result strong {
+    color: #dd2a2a;
 }
