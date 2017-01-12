@@ -75,6 +75,11 @@ input[type="password"] {
     border-radius: 0;
 }
 
+button {
+    border-radius: 0;
+    -webkit-appearance: none
+}
+
 
 /*button Size*/
 
@@ -185,7 +190,7 @@ header#header h1 {
     width: 6.313rem;
     height: 2.063rem;
     font-size: 0;
-    background: url('../images/logo.png') no-repeat center / 100%;
+    background: url('../../data/base/banner/logo_0.png') no-repeat center / 100%;
 }
 
 header#header h1 a {
@@ -309,7 +314,7 @@ aside#all-menu h1 strong {
     width: 6.063rem;
     height: 2rem;
     font-size: 0;
-    background: url('../images/logo-c.png') no-repeat center / 100%;
+    background: url('../../data/base/banner/logo-c.png') no-repeat center / 100%;
 }
 
 aside#all-menu .btn-set {
@@ -607,13 +612,12 @@ section.main-recommend p {
 section.main-recommend p.images {
     display: block;
     overflow: hidden;
-    margin-bottom: 0.625rem;
+    height: 15rem;
+    margin-bottom: 0.1rem;
 }
 
 section.main-recommend img {
-    width: 100%;
-    height: auto;
-    margin: -20% 0;
+    display: none;
 }
 
 section.main-recommend li p.name {
@@ -737,6 +741,19 @@ section.main-customer .btn-set a i {
     color: #887042;
 }
 
+div.etc_cont {
+    display: inline-block;
+    width: 100%;
+}
+
+div.etc_cont>p {
+    margin: 0;
+}
+
+div.etc_cont img {
+    max-width: 100%;
+}
+
 h2.stitle {
     display: inline-block;
     position: relative;
@@ -847,13 +864,12 @@ section.sub-list p {
 section.sub-list p.images {
     display: block;
     overflow: hidden;
-    margin-bottom: 0.625rem;
+    height: 15rem;
+    margin-bottom: 0.1rem;
 }
 
 section.sub-list img {
-    width: 100%;
-    height: auto;
-    margin: -20% 0;
+    display: none;
 }
 
 section.sub-list li p.name {
@@ -1727,6 +1743,18 @@ section.order ul {
     padding: 0;
 }
 
+section.order ul input[type="checkbox"] {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+section.order ul input[type="checkbox"]#same {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
 section.order p {
     margin: 0;
 }
@@ -1734,6 +1762,10 @@ section.order p {
 section.order h3 {
     font-size: 1.250rem;
     font-weight: 400;
+}
+
+.info-table {
+    font-size: 1rem;
 }
 
 .info-table ul {
@@ -1859,7 +1891,7 @@ section.discount .sum i {
     color: #999;
 }
 
-section.discount-more li {
+section.discount-more>ul li {
     font-size: 0;
     padding-bottom: 0.625rem;
 }
@@ -1956,10 +1988,21 @@ section.total li div {
     margin-top: 0.625rem;
 }
 
+section.order-info .delivery-count {
+    text-align: center;
+    font-weight: 600;
+    color: ##3366cc;
+}
+
+section.order-info .delivery-count select {
+    margin-top: 10px;
+}
+
 section.order-info dl {
     border: 1px solid #887042;
     background: #fff;
     padding: 1.250rem 1.250rem 0.625rem;
+    margin-top: 0;
 }
 
 section.order-info dt {
@@ -2044,11 +2087,16 @@ section.order-info h4 {
     font-weight: 600;
 }
 
+section.order-info .right h4 {
+    margin-bottom: 0;
+}
+
 section.order-info h4 ul {
     position: relative;
     background: #ccc;
     padding: 0.625rem;
     text-align: right;
+    margin-bottom: 0;
 }
 
 section.order-info h4 li {
@@ -2481,8 +2529,13 @@ section.address-reg input[type="text"] {
     border-color: #bbb;
 }
 
-section.address-reg input.tel {
+section.address-reg input.tel,
+section.address-reg select.tel {
     width: calc((100% - 2.500rem) / 3);
+}
+
+section.address-reg select.tel {
+    border: 1px solid #ccc
 }
 
 section.address-reg input.mail {
@@ -2665,7 +2718,7 @@ section.inquiry {
 }
 
 section.inquiry p.head {
-    margin: 0.625rem;
+    margin: 10px;
     background: #fff;
     padding: 1.250rem;
     text-align: center;
