@@ -2047,13 +2047,21 @@ section.order-info button.btnS {
     border-left: none;
 }
 
+section.order-info p.select {
+    font-size: 0;
+}
+
 section.order-info select {
     height: 2.250rem;
-    width: 100%;
+    width: 30%;
     line-height: 2.250rem;
     font-size: 1rem;
     padding: 0 0.625rem;
     margin-bottom: 0.625rem;
+}
+
+section.order-info select.order-name {
+    width: 70%;
 }
 
 section.order-info input.tel,
