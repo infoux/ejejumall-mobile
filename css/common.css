@@ -2048,7 +2048,7 @@ section.order-info button.btnS {
     border-left: none;
 }
 
-section.order-info p.select {
+section.order-info div.select {
     font-size: 0;
 }
 
@@ -2061,8 +2061,14 @@ section.order-info select {
     margin-bottom: 0.625rem;
 }
 
-section.order-info select.order-name {
+section.order-info div.select h5 {
+    display: inline-block;
+    font-size: 1rem;
     width: 70%;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 section.order-info input.tel,
