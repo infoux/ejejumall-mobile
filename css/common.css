@@ -1996,6 +1996,7 @@ section.order-info .delivery-count {
 
 section.order-info .delivery-count select {
     margin-top: 10px;
+    width: 100%;
 }
 
 section.order-info dl {
