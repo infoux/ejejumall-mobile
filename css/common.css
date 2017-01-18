@@ -9,8 +9,6 @@
 
 /*font*/
 
-html {}
-
 @media (max-width:360px) {
     html {
         font-size: 14px;
@@ -1991,7 +1989,7 @@ section.total li div {
 section.order-info .delivery-count {
     text-align: center;
     font-weight: 600;
-    color: ##3366cc;
+    color: #3366cc;
 }
 
 section.order-info .delivery-count select {
@@ -3409,4 +3407,170 @@ section.order.total div.sum p.result {
 
 section.order.total div.sum p.result strong {
     color: #dd2a2a;
+}
+
+
+/*board_gallery*/
+
+ul.gallery_notice {
+    display: inline-block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 10px 20px;
+    list-style: none;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+ul.gallery_notice a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul.gallery_notice li {
+    border-bottom: 1px solid #eee;
+    padding: 0;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+}
+
+ul.gallery_notice li:last-child {
+    border-bottom: none;
+}
+
+ul.gallery_notice h3 {
+    margin: 0;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #333;
+}
+
+ul.gallery_notice input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+ul.gallery_notice i {
+    position: absolute;
+    right: 10px;
+    font-style: normal;
+    font-size: 12px;
+    color: #999;
+}
+
+ul.gallery_notice strong {
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 10px;
+    font-size: 11px;
+    background: #3366cc;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.board_util {
+    position: relative;
+    padding: 10px;
+    margin: 20px 0 0;
+}
+
+.board_util p {
+    margin: 0;
+    padding: 0 !important;
+}
+
+.board_util input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.board_util label {
+    font-weight: 600;
+}
+
+.bbs_total {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+ul.gallery_list {
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+    padding: 0 10px;
+    list-style: none;
+}
+
+ul.gallery_list li {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+ul.gallery_list li input[type="checkbox"] {
+    position: absolute;
+    z-index: 200;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+ul.gallery_list li a {
+    display: block;
+    margin: 10px 10px 30px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+}
+
+ul.gallery_list li img {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+ul.gallery_list.list02 li {
+    width: calc(100% / 2);
+}
+
+ul.gallery_list.list03 li {
+    width: calc(100% / 3);
+}
+
+ul.gallery_list.list04 li {
+    width: calc(100% / 4);
+}
+
+ul.gallery_list.list05 li {
+    width: calc(100% / 5);
+}
+
+ul.gallery_list li h3 {
+    font-weight: 400;
+    font-size: 14px !important;
+    margin: 10px 0 8px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.gallery_list li p.name {
+    text-align: center;
+    margin: 0 0 4px;
+    font-weight: 600;
+}
+
+ul.gallery_list li a>i {
+    display: block;
+    font-style: normal;
+    text-align: center;
+    font-size: 12px;
+    color: #3366cc;
 }
