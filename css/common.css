@@ -226,7 +226,89 @@ header#header .util-menu a i {
     font-size: 1.500rem;
     color: #fff;
 }
+/*///////////////////////////////////////////////// */
+header#header.company{
+	background:#fff;
+}
+header#header.company h1{
+	width:auto;
+	font-size:1.5rem;
+	font-weight:normal;
+}
+header#header.company h1 a{
+	text-decoration:none;
+	color:#333;
+}
+header#header.company .util-menu a.logo{
+	background:url('../images/small-logo.png') no-repeat center / cover;
+	width:1.438rem;
+	height:1.875rem;
+	top:0.875rem;
+	left:1.25rem;
+}
+header#header.company .util-menu a i{
+	color:#999;
+}
 
+header#header.company fieldset.search{
+	display:block;
+	background:#f15e0e;
+}
+header#header.company fieldset a {
+    display: block;
+    position: absolute;
+    top: 0.625rem;
+    font-size: 0;
+}
+header#header.company fieldset a.all-menu {
+    left: 0.938rem;
+}
+header#header.company fieldset a i{
+	font-size:2rem;
+	color:#fff;
+}
+header#header.company fieldset.search input {
+    width: calc(100% - 6.875rem);
+	margin-left:2.5rem;
+}
+article#content.company{
+	margin-top:4.375rem;
+}
+article#content.company section.notice{
+	position:relative;
+	padding:0.625rem;
+	background:#ccc;
+}
+article#content.company section.notice ul{
+	margin:0;
+	padding:0;
+}
+article#content.company section.notice ul li{
+	position:relative;
+	padding-left:0.938rem;
+}
+article#content.company section.notice ul li:before{
+	content:'·';
+	display:inline-block;
+	position:absolute;
+	top:-0.125rem;
+	left:0.5rem;
+}
+article#content.company section.notice ul li:first-child:before{
+	display:none;
+}
+article#content.company section.notice ul li:first-child{
+	padding-left:0;
+}
+article#content.company section.notice ul li h2{
+	font-size:1.25rem;
+	margin:0.313rem;
+}
+article#content.company section.notice p{position:absolute;top:0.188rem;right:1.125rem;}
+article#content.company section.notice p a{position:relative;display:inline-block;width:3.625rem;height:3.625rem;font-size:12px;border-radius:50%;background:#333;color:#fff;text-align:center;text-decoration:none;}
+article#content.company section.notice p a span{position:absolute;top:0.25rem;left:0.063rem;}
+article#content.company section > h2{text-align:center;}
+/*///////////////////////////////////////////////// */
 header#header fieldset.search {
     position: absolute;
     display: none;
