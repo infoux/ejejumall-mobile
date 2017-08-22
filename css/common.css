@@ -966,9 +966,9 @@ ul.pagination li {
 
 ul.pagination li a {
     display: block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 2.25rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
     text-align: center;
     border: 1px solid #ccc;
     color:#555;
