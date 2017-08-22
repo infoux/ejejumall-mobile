@@ -946,6 +946,48 @@ section.sub-list .btn-set button.active {
     background:#f15e0e;
 }
 
+
+
+
+ul.pagination {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 !important;
+}
+
+ul.pagination li {
+    display: inline-block;
+    vertical-align: top;
+    width:auto;
+    margin:2px !important;
+    font-size:1rem;
+}
+
+ul.pagination li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color:#555;
+}
+
+ul.pagination li a.active {
+    background: #555;
+    color: #fff;
+    border-color: transparent;
+}
+
+ul.pagination li a.btn-prev,
+ul.pagination li a.btn-next,
+ul.pagination li a.btn-prevAll,
+ul.pagination li a.btn-nextAll {
+    background: #efefef;
+}
+
+
 section.view-top .slide-outline {
     position:relative;
     font-size:0;
@@ -1047,11 +1089,16 @@ section.view-top .btn-set .default i {
     font-size:1.125rem;
 }
 
+section.view-top .btn-set .npay_button_box {
+  margin:1rem 0 !important;
+}
+
 section.view-top .option {
     display:inline-block;
     position:fixed;
     z-index:300;
-    bottom:3.750rem;
+    /*bottom:3.750rem;*/
+    bottom: 9.35em;
     left:0;
     border-top:1px solid #333;
     padding:0 0.625rem;
@@ -1646,6 +1693,17 @@ section.join-agree textarea {
     margin-bottom:0.625rem;
     padding:0.625rem;
     font-size:0.750rem;
+}
+
+section.join-agree div.licensing {
+    display:none;
+    width:100%;
+    height:11.250rem;
+    margin-bottom:0.625rem;
+    padding:0.625rem;
+    font-size:0.750rem;
+    overflow-y: scroll;
+    border: 1px solid;
 }
 
 section.join {
